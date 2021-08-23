@@ -9,5 +9,5 @@ RUN cd /tmp && wget https://www.python.org/ftp/python/3.6.14/Python-3.6.14.tgz \
     && ./configure --prefix=/usr/local/python3 \
     && make -j 20 \
     && make install \
-    && rm -rf /tmp/* \
-    && /usr/local/python3/bin/pip3 install torch torchvision torchaudio
+    && rm -rf /tmp/*
+RUN /usr/local/python3/bin/pip3 install torch torchvision torchaudio
